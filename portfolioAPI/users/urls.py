@@ -3,7 +3,7 @@ from users.views import DataViewSet
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
-router.register('anurag', DataViewSet)
+router.register('user', DataViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
