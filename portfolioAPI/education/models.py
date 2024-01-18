@@ -11,7 +11,7 @@ class Education(models.Model):
     start_date = models.DateField()
     end_date = models.DateField()
     grade_style = models.CharField(max_length=255, choices=[("cgpa", "CGPA"), ("percentage", "PERCENTAGE")])
-    grade = models.FloatField()
+    grade = models.FloatField(null=True, blank=True)
     objects = models.Manager()
 
 

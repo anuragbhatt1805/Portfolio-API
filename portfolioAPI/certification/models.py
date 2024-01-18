@@ -18,7 +18,7 @@ class Certification(models.Model):
 def badgepic(instance, filepath):
     ext = os.path.splitext(filepath)[1]
     filename = f"{uuid.uuid4()}{ext}"
-    return os.path.join('image', 'badge', filename)
+    return os.path.join('badge', filename)
 
 class Badges(models.Model):
     title = models.CharField(max_length=100)

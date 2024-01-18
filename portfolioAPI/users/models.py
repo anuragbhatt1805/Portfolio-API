@@ -40,7 +40,7 @@ def adminPic(instance, filepath):
     "Function for Profile Picture"
     ext = os.path.splitext(filepath)[1]
     filename = f"{uuid.uuid4()}{ext}"
-    return os.path.join('image', 'picture', filename)
+    return os.path.join('picture', filename)
 
 class AdminDomain(models.Model):
     domain = models.CharField(max_length=255)
@@ -49,7 +49,6 @@ class AdminDomain(models.Model):
 class AreaOfInterest(models.Model):
     area = models.CharField(max_length=255)
     objects = models.Manager()
-
 
 class AdminData(models.Model):
     user = models.OneToOneField(

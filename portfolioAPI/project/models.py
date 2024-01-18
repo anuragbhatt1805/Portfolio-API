@@ -5,7 +5,7 @@ import uuid, os
 def project(instance, filepath):
     ext = os.path.splitext(filepath)[1]
     filename = f"{uuid.uuid4()}{ext}"
-    return os.path.join('image', 'project', filename)
+    return os.path.join('project', filename)
 
 # Create your models here.
 class Project(models.Model):
