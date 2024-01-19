@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/46244dda-1499-4d31-940c-39063937a1f8/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/anurag-portfolio-app",
+    "appService.deploySubpath": "."
+}
